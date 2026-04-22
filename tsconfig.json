@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/Header.js",
+    "app/aboutUs/greetings/page.jsx",
+    "components/Header.jsx",
+    "app/aboutUs/structure/page.jsx",
+    "app/aboutUs/about-us/page.jsx",
+    "app/page.jsx",
+    "app/layout.jsx",
+    "app/layout.jsx",
+    "app/info/news/page.jsx",
+    "app/[id]/page.jsx",
+    "app/humanResourse/statistics/page.jsx",
+    "app/humanResourse/human/page.jsx",
+    "app/contact/page.jsx",
+    "app/humanResourse/ads/page.jsx",
+    "app/address/page.jsx",
+    "app/transparency/sankhuu/page.jsx",
+    "app/transparency/legal/page.jsx",
+    "app/transparency/procurement/page.jsx",
+    "app/transparency/awilga/page.jsx",
+    "build/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

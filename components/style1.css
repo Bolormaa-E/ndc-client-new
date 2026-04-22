@@ -1,0 +1,71 @@
+#circleTwo {
+    transform: rotateY(-90deg);
+    animation: connectionCircle 5s linear infinite;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  
+  @keyframes connectionCircle {
+    0% {
+      transform: rotateY(-90deg);
+    }
+    100% {
+      transform: rotateY(90deg);
+    }
+  }
+  /* #circleTwo {
+        animation: connectionCircle 5s linear infinite;
+        animation-fill-mode: forwards;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+    
+    @keyframes connectionCircle {
+        0% {
+            transform: rotateY(90deg);
+        }
+        100% {
+            transform: rotateY(0deg);
+        }
+    } */
+  #fans {
+    animation: fans 5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes fans {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  #tree {
+    animation: tree ease-in-out 1.6 infinite alternate;
+    transform-origin: bottom;
+  }
+  @keyframes tree {
+    0% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(-20deg);
+    }
+  }
+  /* #mongolia {
+        animation: animateMongolia 15s linear infinite;
+        animation-fill-mode: forwards;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+    @keyframes animateMongolia {
+        0% {
+            transform: rotateY(360deg) rotateX(10deg);
+        }
+        100% {
+            transform: rotateY(0deg);
+        }
+    } */
+  

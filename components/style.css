@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scene {
+  position: relative;
+  height: 560px;
+  overflow: hidden;
+  background: linear-gradient(#a6d8ff, #fff, #fff);
+}
+
+.dark .scene {
+  background: #222833;
+}
+
+.sun {
+  position: absolute;
+  top: 80px;
+  left: 55%;
+  transform: translate(-50%);
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #fff;
+  cursor: pointer;
+  transition: 0.2s;  z-index: 2;
+}
+
+.dark .sun {
+  left: 45%;
+  box-shadow: 0 0 0 #fff;
+}
+
+.dark .sun::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background: #222833;
+  border-radius: 50%;
+}
+
+.bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 340px;
+  /* animation: animateBg 30s linear infinite; */
+}
+
+.background-img {
+  max-width: max-content;
+  object-position: right !important;
+}
+
+@media (min-width: 1280px) {
+  .background-img {
+    max-width: 100%;
+  }
+}
+
+/* @keyframes animateBg
+{
+  0%
+  {
+    background-position-x: 0px;
+  }
+  100%
+  {
+    background-position-x: -1000px;
+  }
+} */
+.cloud {
+  position: absolute;
+  right: -400px;
+  bottom: 300px;
+  max-width: 1400px;
+  height: 60px;
+  animation: cloud 38s linear infinite;
+}
+.disnews {
+  position: absolute;
+  right: 100px;
+  top: 20px;
+}
+
+.cloud1 {
+  position: absolute;
+  right: 400px;
+  bottom: 300px;
+  max-width: 1400px;
+  height: 60px;
+  animation: cloud1 38s linear infinite;
+}
+
+@keyframes cloud {
+  0% {
+    margin-left: -1000px;
+  }
+
+  90%,
+  100% {
+    margin-right: 100%;
+  }
+}
+
+.cloud {
+  transform: scale(1);
+  animation: cloud 160s linear infinite;
+}
+
+.cloud1 {
+  transform: scale(1);
+  animation: cloud 160s linear infinite;
+}
+
+.car1 {
+  position: absolute;
+  left: -200px;
+  animation: car3 20s linear infinite;
+}
+
+.car3 {
+  position: absolute;
+  left: 0;
+  animation: car3 20s linear infinite;
+}
+
+@keyframes car1 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  90%,
+  100% {
+    transform: translate(calc(100vw + 200px));
+  }
+}
+
+@keyframes car3 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  90%,
+  100% {
+    transform: translate(calc(100vw + 200px));
+  }
+}
+
+.car2 {
+  position: absolute;
+  right: -300px;
+  animation: car2 20s linear infinite;
+}
+
+.car4 {
+  position: absolute;
+  right: 0;
+  animation: car4 20s linear infinite;
+}
+
+@keyframes car2 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  90%,
+  100% {
+    transform: translate(calc(-120vw + 200px));
+  }
+}
+
+@keyframes car4 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  90%,
+  100% {
+    transform: translate(calc(-120vw + 200px));
+  }
+}
+
+.text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  color: #213159;
+  position: absolute;
+  right: 100px;
+  bottom: 400px;
+  animation: text 18s linear infinite;
+}
+
+@keyframes text {
+  0% {
+    transform: translateX(0px);
+  }
+
+  90%,
+  100% {
+    transform: translate(calc(-100vw + 200px));
+  }
+
+}
+
+@media (min-width: 1750px) {
+  img[alt="fan1"] {
+    bottom: 130px
+  }
+
+  img[alt="fan2"] {
+    bottom: 125px
+  }
+
+  img[alt="fan3"] {
+    bottom: 135px
+  }
+}
+
+@media (min-width: 1900px) {
+  img[alt="fan1"] {
+    bottom: 150px
+  }
+
+  img[alt="fan2"] {
+    bottom: 145px
+  }
+
+  img[alt="fan3"] {
+    bottom: 155px
+  }
+}
+
+.fan1 {
+  position: absolute;
+  right: 834px;
+  bottom: 146px;
+  max-width: 80px;
+  color: #213159;
+}
+
+.fan2 {
+  position: absolute;
+  right: 816px;
+  bottom: 180px;
+  max-width: 80px;
+  color: #213159;
+}
+
+.fan3 {
+  position: absolute;
+  right: 790px;
+  bottom: 164px;
+  max-width: 80px;
+}
