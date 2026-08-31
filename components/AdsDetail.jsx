@@ -35,9 +35,9 @@ const AdsDetail = () => {
 
             <div className="flex items-center justify-center gap-2 text-gray-600 text-sm">
               <span>🕐</span>
-              {post?.attributes.publishedAt && (
+              {post?.attributes.date && (
                 <span>
-                  {new Date(post.attributes.publishedAt)
+                  {new Date(post.attributes.date)
                     .toLocaleDateString("ja-JP", {
                       year: "numeric",
                       month: "2-digit",
