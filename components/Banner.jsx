@@ -164,7 +164,7 @@ const Banner = ({ size, color }) => {
             </ul>
           </div>
       </div>
-       <div className="flex flex-col md:flex-row items-center justify-center md:gap-6 lg:gap-10 py-4 md:py-6 px-4 md:px-8 overflow-hidden"> 
+       {/* <div className="flex flex-col md:flex-row items-center justify-center md:gap-6 lg:gap-10 py-4 md:py-6 px-4 md:px-8 overflow-hidden"> 
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <iframe 
                 className="w-full h-[240px] sm:h-[320px] md:h-[380px] lg:h-[440px]"
@@ -182,7 +182,7 @@ const Banner = ({ size, color }) => {
                 title="Brochure"
             ></iframe>
           </div>
-      </div>
+      </div> */}
    </div>
   )
 }
